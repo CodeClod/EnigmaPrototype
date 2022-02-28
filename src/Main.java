@@ -1,13 +1,12 @@
 import java.util.Scanner;
 
 public class Main {
-
-
     Scanner in = new Scanner(System.in);
+
     // TODO Method for char -> int (input char, output int)
     int encryption(char text) {
         int conversion;
-        switch (text){
+        switch (text) {
             case ' ' -> conversion = 0;
             case 'A' -> conversion = 1;
             case 'B' -> conversion = 2;
@@ -42,12 +41,50 @@ public class Main {
 
         return conversion;
     }
+
     // TODO Method for int -> char (input int, output char)
+    char Decryption(int encryptedChar) {
+        char conversion;
+        switch (encryptedChar) {
+            case 0 -> conversion = ' ';
+            case 1 -> conversion = 'A';
+            case 2 -> conversion = 'B';
+            case 3 -> conversion = 'C';
+            case 4 -> conversion = 'D';
+            case 5 -> conversion = 'E';
+            case 6 -> conversion = 'F';
+            case 7 -> conversion = 'G';
+            case 8 -> conversion = 'H';
+            case 9 -> conversion = 'I';
+            case 10 -> conversion = 'J';
+            case 11 -> conversion = 'K';
+            case 12 -> conversion = 'L';
+            case 13 -> conversion = 'M';
+            case 14 -> conversion = 'N';
+            case 15 -> conversion = 'O';
+            case 16 -> conversion = 'P';
+            case 17 -> conversion = 'Q';
+            case 18 -> conversion = 'R';
+            case 19 -> conversion = 'S';
+            case 20 -> conversion = 'T';
+            case 21 -> conversion = 'U';
+            case 22 -> conversion = 'V';
+            case 23 -> conversion = 'W';
+            case 24 -> conversion = 'Z';
+            case 25 -> conversion = 'Y';
+            case 26 -> conversion = 'Z';
+            case 27 -> conversion = 'Æ';
+            case 28 -> conversion = 'Ø';
+            case 29 -> conversion = 'Å';
+        }
+        return conversion;
+    }
+
 
 
     public static void main(String[] args) {
         Main met = new Main();
-        met.encryption(input);
+        met.encryption();
 
     }
 }
