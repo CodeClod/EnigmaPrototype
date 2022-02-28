@@ -5,7 +5,7 @@ public class Main {
 
     // TODO Method for char -> int (input char, output int)
     int encryption(char text) {
-        int conversion;
+        int conversion = 0;
         switch (text) {
             case ' ' -> conversion = 0;
             case 'A' -> conversion = 1;
@@ -43,8 +43,8 @@ public class Main {
     }
 
     // TODO Method for int -> char (input int, output char)
-    char Decryption(int encryptedChar) {
-        char conversion;
+    char decryption(int encryptedChar) {
+        char conversion = 'a'; // Question for teacher: Is placeholder names for in-method variable initialazation ok?
         switch (encryptedChar) {
             case 0 -> conversion = ' ';
             case 1 -> conversion = 'A';
@@ -80,11 +80,13 @@ public class Main {
         return conversion;
     }
 
-
-
     public static void main(String[] args) {
         Main met = new Main();
-        met.encryption();
+
+        // Prints for method testing :
+        System.out.println(met.encryption('M'));
+        System.out.println(met.decryption(5));
+
 
     }
 }
